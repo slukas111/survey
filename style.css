@@ -1,3 +1,59 @@
 body {
-    background-color: #bbbb;
+  background-color: #bbbb;
+  font-family: Lucida Console;
+  width: 500px;
+  margin: auto;
+}
+
+form {
+  background: white;
+  padding: 2.5rem 2.5rem;
+  border-radius: 5px;
+  width: 500px;
+  margin: auto;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 20px auto 10px auto;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto 10px auto;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#textarea {
+  width: 98%;
+}
+
+.form-input {
+  display: block;
+  width: 90%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid #bbbb;
+  padding: 0.25rem 0.25rem;
+  outline: none;
+  margin: 0 0 15px 0;
+  
+}
+
+#title,
+#description {
+  text-align: center;
 }

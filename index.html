@@ -14,13 +14,13 @@
    
   <form id="survey-form">
     <label id="name-label">Name:</label>
-    <input type="text" id="name" placeholder="enter name" required>
+    <input type="text" id="name" placeholder="enter name" class="form-input" required>
     <label id="email-label">Email:</label>
-    <input type="email" id="email" placeholder="enter email" required>
+    <input type="email" id="email" placeholder="enter email" class="form-input" required>
     <label id="number-label">Age:</label>
-    <input type="number" id="number" placeholder="enter age" min="0" max="100" required>
+    <input type="number" id="number" placeholder="enter age" min="0" max="100" class="form-input" required>
       <label for="location">Choose a location:</label>
-  <select id="dropdown" name="location">
+  <select id="dropdown" name="location" class="form-input">
     <option value="rainer">Rainer</option>
     <option value="mlk">Martin Luther</option>
     <option value="south park">South Park</option>
@@ -34,32 +34,42 @@
     <input type="radio" id="other" name="gender" value="other">
     <label for="other">Other</label>
     <h5>Select income</h5>
-  <input type="checkbox" id="income1" name="income1" value="low-income">
+  <input type="radio" id="income1" name="income1" value="low-income">
   <label for="income1"> less than $20,000 </label><br>
-  <input type="checkbox" id="income2" name="income2" value="moderate-income">
+  <input type="radio" id="income2" name="income2" value="moderate-income">
   <label for="income2"> less than $40,000 </label><br>
-  <input type="checkbox" id="income3" name="income3" value="good-income">
+  <input type="radio" id="income3" name="income3" value="good-income">
   <label for="income3"> less than $60,000 </label><br>
-  <input type="checkbox" id="income4" name="income4" value="target-income">
+  <input type="radio" id="income4" name="income4" value="target-income">
   <label for="income4">more than $60,000  </label><br>
     
    <h5>Select needs met in location</h5>
-  <input type="checkbox" id="needs1" name="needs1" value="complete">
+  <input type="radio" id="needs1" name="needs1" value="complete">
   <label for="needs1"> always filled and available</label><br>
-  <input type="checkbox" id="needs2" name="needs2" value="monthly">
+  <input type="radio" id="needs2" name="needs2" value="monthly">
   <label for="needs2"> once a month empty </label><br>
-  <input type="checkbox" id="needs3" name="needs3" value="weekly">
+  <input type="radio" id="needs3" name="needs3" value="weekly">
   <label for="needs3"> once a week empty </label><br>
-  <input type="checkbox" id="needs4" name="income4" value="inadequate">
+  <input type="radio" id="needs4" name="income4" value="inadequate">
   <label for="needs4"> always empty  </label><br>
+
+  <h5>Diet needs (check all that apply)</h5>
+  <input type="checkbox" id="needs1" name="needs1" value="american">
+  <label for="needs1"> any diet</label><br>
+  <input type="checkbox" id="needs2" name="needs2" value="vegan">
+  <label for="needs2"> vegan </label><br>
+  <input type="checkbox" id="needs3" name="needs3" value="vegetarian">
+  <label for="needs3"> vegetarian</label><br>
+  <input type="checkbox" id="needs4" name="income4" value="keto">
+  <label for="needs4"> keto  </label><br>
    
   <h5>Any Comments or concerns</h5>
   <textarea id="textarea" name="textarea" rows="4" cols="50">
 
   </textarea><br>
     
-    <input type="submit" id="submit" value="Submit">
-    <input type="reset">
+    <input type="submit" id="submit" value="Submit" class="submit-btn">
+    <input type="reset" class="reset-btn">
   </form>
 </body>
 </html>
