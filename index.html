@@ -8,6 +8,58 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> this is the survey page</h1>
+ 
+    <h1 id="title"> this is the survey page</h1>
+    <p id="description">Columbia City donation survey</p>
+   
+  <form id="survey-form">
+    <label id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="enter name" required>
+    <label id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="enter email" required>
+    <label id="number-label">Age:</label>
+    <input type="number" id="number" placeholder="enter age" min="0" max="100" required>
+      <label for="location">Choose a location:</label>
+  <select id="dropdown" name="location">
+    <option value="rainer">Rainer</option>
+    <option value="mlk">Martin Luther</option>
+    <option value="south park">South Park</option>
+    <option value="new holly">New Holly</option>
+  </select>
+    <h5>Please select gender</h5>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+    <h5>Select income</h5>
+  <input type="checkbox" id="income1" name="income1" value="low-income">
+  <label for="income1"> less than $20,000 </label><br>
+  <input type="checkbox" id="income2" name="income2" value="moderate-income">
+  <label for="income2"> less than $40,000 </label><br>
+  <input type="checkbox" id="income3" name="income3" value="good-income">
+  <label for="income3"> less than $60,000 </label><br>
+  <input type="checkbox" id="income4" name="income4" value="target-income">
+  <label for="income4">more than $60,000  </label><br>
+    
+   <h5>Select needs met in location</h5>
+  <input type="checkbox" id="needs1" name="needs1" value="complete">
+  <label for="needs1"> always filled and available</label><br>
+  <input type="checkbox" id="needs2" name="needs2" value="monthly">
+  <label for="needs2"> once a month empty </label><br>
+  <input type="checkbox" id="needs3" name="needs3" value="weekly">
+  <label for="needs3"> once a week empty </label><br>
+  <input type="checkbox" id="needs4" name="income4" value="inadequate">
+  <label for="needs4"> always empty  </label><br>
+   
+  <h5>Any Comments or concerns</h5>
+  <textarea id="textarea" name="textarea" rows="4" cols="50">
+
+  </textarea><br>
+    
+    <input type="submit" id="submit" value="Submit">
+    <input type="reset">
+  </form>
 </body>
 </html>
